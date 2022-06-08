@@ -47,7 +47,7 @@ eh.subscribe("set_energy_usage", (req) => {
     }
 });
 
-eh.subscribe("get_energy_usage", (req) => {
+eh.subscribe("get_energy_schedule", (req) => {
     let data = {};
     if (req['device_id'] == 0) {
         let current_data = readDeviceFile("0");
@@ -62,7 +62,7 @@ eh.subscribe("get_energy_usage", (req) => {
     return data;
 });
 
-eh.subscribe("get_energy_schedule", (req) => {
+eh.subscribe("get_energy_usage", (req) => {
     let data = {};
     if (req['device_id'] == 1) {
         let current_data = readDeviceFile("1");
