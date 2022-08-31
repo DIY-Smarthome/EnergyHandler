@@ -1,5 +1,7 @@
 {
-  "dependencies": {
-    "infinite-loop": "^0.2.2"
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build-ts",
+    "build-ts": "tsc --build tsconfig.json"
   }
 }
